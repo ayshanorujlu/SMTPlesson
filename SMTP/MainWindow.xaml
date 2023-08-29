@@ -1,0 +1,33 @@
+﻿<Window x:Class="SMTP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SMTP"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450"
+        Width="800"
+        FontSize="30">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label HorizontalAlignment="Center" Background="CadetBlue" Foreground="Azure">Send To</Label>
+            <TextBox Name="SendTo_txt" Background="Beige" Foreground="Black"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Label HorizontalAlignment="Center" Background="CadetBlue" Foreground="Azure">Subject</Label>
+            <TextBox Name="Subject_txt" Background="Beige" Foreground="Black" />
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Label HorizontalAlignment="Center" Background="CadetBlue" Foreground="Azure">Body</Label>
+            <TextBox Name="Body_txt" Background="Beige" Foreground="Black"/>
+        </StackPanel>
+        <Button Grid.Row="3" Click="Button_Click" Width="100" Height="40" Foreground="Azure" Background="DarkSeaGreen">Send</Button>
+    </Grid>
+</Window>
